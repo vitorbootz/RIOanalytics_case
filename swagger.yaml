@@ -25,8 +25,8 @@ paths:
           schema:
             $ref: "#/definitions/Empty"
       x-amazon-apigateway-integration:
-        credentials: "***** ARN DA ROLE *****"
-        uri: "arn:aws:apigateway:us-east-1:s3:path/***** NOME DO BUCKET *****/{item}"
+        credentials: "***** ROLE *****"
+        uri: "arn:aws:apigateway:us-east-1:s3:path/***** BUCKET *****/{item}"
         responses:
           default:
             statusCode: "200"
@@ -43,4 +43,4 @@ definitions:
     type: "object"
     title: "Empty Schema"
 x-amazon-apigateway-binary-media-types:
-- "image/jpeg"
+- "TIPO DE DADO"
